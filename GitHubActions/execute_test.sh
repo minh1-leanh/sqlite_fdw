@@ -27,6 +27,11 @@ SQLITE_FOR_TESTING_DIR="$3"
 
 cd ./workdir/postgresql-${VERSION}/contrib/sqlite_fdw
 
+gdalinfo --version
+proj
+geos-config --version
+spatialite --version
+
 if [ "$MODE" == "postgis" ]; then
 	export ENABLE_GIS=1
 
